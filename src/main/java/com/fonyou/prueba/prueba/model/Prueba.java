@@ -24,7 +24,11 @@ public class Prueba implements Serializable {
     @Column(name = "nombre", nullable = false)
     private String nombre;
 
-    @Column(name = "comentario", nullable = false)
+    @NotNull
+    @Column(name = "objetivo")
+    private String objetivo;
+
+    @Column(name = "comentario")
     private String comentario;
 
 }
